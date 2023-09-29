@@ -1,0 +1,85 @@
+QMainWindow {
+    background-color: rgb(210, 230, 250); 
+    border-radius: 8px;
+    border: 1px solid rgb(180, 200, 230);
+}
+
+QWidget {
+    background-color: none;
+    font-family: "Microsoft YaHei";
+}
+
+QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 80, 156, 255), stop:1 rgba(126, 168, 218, 255));
+    border-radius: 8px;
+    color: white; 
+    padding: 6px 10px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+QLabel {
+    color: rgb(80, 80, 80);
+    font-family: "Microsoft YaHei Light"; 
+    font-size: 14px;
+    padding: 6px 2px;
+}
+
+QLabel[title="true"] {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(2, 65, 118, 255), stop:1 rgba(66, 133, 244, 255));
+}
+
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(2, 65, 118, 255), stop:1 rgba(2, 65, 118, 255));
+}
+
+QLineEdit {
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 8px;
+    background-color: rgb(255, 255, 255); 
+}
+
+/* 修改 QComboBox 的外观 */
+QComboBox {
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 8px;
+}
+
+QComboBox:hover {
+    background-color: rgb(229, 243, 255);
+}
+
+/* 修改下拉箭头图标样式 */
+QComboBox::down-arrow {
+    image: url('./icon/down.png'); /* 替换为您的箭头图标路径 */
+    width: 16px; /* 调整箭头图标的宽度 */
+    height: 16px; /* 调整箭头图标的高度 */
+    subcontrol-position: right center; /* 箭头在右侧中心位置 */
+    subcontrol-origin: padding; /* 箭头位于 padding 区域 */
+    border: none; /* 去掉箭头图标的边框 */
+    background: none; /* 去掉背景颜色 */
+}
+
+
+QListView {
+    outline: none;
+    border: none;
+}
+
+QListView::item {
+    padding: 6px;
+}
+
+QListView::item:selected {
+    background-color: rgb(206, 230, 253);
+}
